@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {    //3.4
+            try
+            {
+                Console.WriteLine("|     x       |       y       |");
+                for (double x = 1; x <= 3; x += 0.2)
+                {
+                    double y = (Math.Sin(3) * Math.Sqrt(x) + 0.25 * x - 3);
+                    Console.WriteLine("|{0,14:F1}|{1,14:F2}|", x, y);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+    }
+
